@@ -63,7 +63,7 @@ class CommentViewSet(ModelViewSet):
     def get_serializer_context(self):
         return {'product_pk':self.kwargs['product_pk']}
 
-ModelViewSet
+
 class CartViewSet(mixins.CreateModelMixin,
                    mixins.RetrieveModelMixin,
                    mixins.DestroyModelMixin,
